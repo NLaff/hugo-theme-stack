@@ -1,13 +1,13 @@
 {{ define "main" }}
     <h3 class="section-title">
         {{ if eq .Parent (.GetPage "/") }}
-            {{ T "list.section" }}
+
         {{ else }}
             {{ .Parent.Title }}
         {{ end }}
     </h3>
 
-    <div class="section-card">
+    <!--<div class="section-card">
         <div class="section-details">
             <h3 class="section-count">{{ T "list.page" (len .Pages) }}</h3>
             <h1 class="section-term">{{ .Title }}</h1>
@@ -40,7 +40,7 @@
                 {{ end }}
             </div>
         {{ end }}
-    </div>
+    </div>-->
 
     {{ $subsections := .Sections }}
     {{ with $subsections }}
